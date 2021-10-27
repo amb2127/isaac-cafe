@@ -1,0 +1,53 @@
+<items gfxroot="gfx/items/" version="1">
+
+    <passive
+      name="Customized Cocktail"
+      description="???"
+      gfx="default_cocktail.png"
+      quality="3"
+    />
+
+    <passive
+    	name="A Glass of Water"
+    	description="Stay hydrated!"
+    	gfx="water.png"
+    	quality="1"
+    />
+    <passive
+    	name="Old Beer"
+    	description="I remember this from somewhere..."
+    	gfx="beer.png"
+    	quality="2"
+    />
+    <passive
+    	name="Black Coffee"
+    	description="It's scorching hot!"
+    	gfx="coffee.png"
+    	quality="2"
+      cache="damage firedelay"
+    />
+    <passive
+    	name="Red Wine"
+    	description="I'm not old enough for this..."
+    	gfx="wine.png"
+    	quality="3"
+    />
+    <passive
+    	name="Milkshake!"
+    	description="Mmmmh... delightful!"
+    	gfx="milkshake.png"
+    	quality="3"
+    	maxhearts="2"
+    	hearts="99"
+    	cache="firedelay damage"
+    />
+    <passive
+    	name="Fruit Smoothie"
+    	description="A tasty mix of fruit!"
+    	gfx="smoothie.png"
+    	quality="3"
+    	maxhearts="2"
+    	hearts="99"
+    	cache="firedelay damage speed range shotspeed luck"
+    />
+</items>
