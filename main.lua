@@ -40,6 +40,9 @@ IsaacCafe:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, function(_, player, cacheF
 		if player:HasCollectible(Drinks.MILKSHAKE) then
 			player.Damage = player.Damage + 1
 		end
+		if player:HasCollectible(Drinks.BEER) then
+			player.Damage = player.Damage + 0.5
+		end
 	end
 	if cacheFlag == CacheFlag.CACHE_FIREDELAY then
 		if player:HasCollectible(Drinks.SMOOTHIE) then
@@ -55,6 +58,9 @@ IsaacCafe:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, function(_, player, cacheF
 	if cacheFlag == CacheFlag.CACHE_LUCK then
 		if player:HasCollectible(Drinks.SMOOTHIE) then
 			player.Luck = player.Luck + 1
+		end
+		if player:HasCollectible(Drinks.BEER) then
+			player.Luck = player.Luck + 2
 		end
 	end
 	if cacheFlag == CacheFlag.CACHE_SHOTSPEED then
@@ -327,4 +333,15 @@ IsaacCafe:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, function()
 	tookDamage = false
 	hit = 0
 	WineActive = 0
+end)
+
+IsaacCafe:AddCallback(ModCallbacks.MC_POST_TEAR_INIT, function(_, ent)
+	local player = Isaac.GetPlayer(0)
+	if ent.SpawnerType == EntityType.ENTITY_PLAYER and Game():GetPlayer(0):HasCollectible(Drinks.BEER) then
+		if player:GetFireDirection() == 0 or player:GetFireDirection() == 2 then
+			ent.Velocity = ent.Velocity + Vector(0, (math.random()-0.5)*5)
+		else
+			ent.Velocity = ent.Velocity + Vector((math.random()-0.5)*5, 0)
+		end
+	end
 end)
