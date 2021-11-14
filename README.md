@@ -2,7 +2,9 @@
 mddoing
 
 Progress:
+
 ❌ Cafe2go machine
+
 ❌ Customized Cocktail
 - ❌ Isaac
 - ❌ Maggy
@@ -38,9 +40,15 @@ Progress:
 - ❌ T. Forgotten
 - ❌ T. Bethany
 - ❌ T. Jacob
+
 ✔️ A Glass of Water
+
 ❌ Old Beer
+
 ✔️ Black Coffee
+
 ✔️ Red Wine
+
 ✔️ Milkshake!
+
 ✔️ Fruit Smoothie
