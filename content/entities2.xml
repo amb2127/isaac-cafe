@@ -1,0 +1,19 @@
+<entities anm2root="gfx/" version="1">
+	
+	<!-- Effects -->
+	<entity 
+		name="Red Wine"
+		anm2path="redwine.anm2"
+		id="1000"
+		baseHP="0"
+		stageHP="0"
+		boss="0"
+		champion="0"
+		collisionDamage="0"
+		collisionMass="45"
+		collisionRadius="9"
+		friction="1"
+		numGridCollisionPoints="9"
+		shadowSize="0">
+    </entity>
+</entities>
