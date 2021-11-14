@@ -43,7 +43,7 @@ Progress:
 
 ✔️ A Glass of Water
 
-❌ Old Beer
+✔️ Old Beer
 
 ✔️ Black Coffee
 
